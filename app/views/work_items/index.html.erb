@@ -1,0 +1,61 @@
+<p id="notice"><%= notice %></p>
+
+<h3>Work Items</h3>
+<!-- <div> -->
+
+  <div id='work-area'>
+    <div id='comments-customer'>
+
+
+    <div id='comments'>
+      <h4>Comment:</h4>
+      <button id='queue-back' class='queue-button btn btn-primary'>Back</button>
+      <button id='queue-escalate' class='queue-button btn btn-primary'>Escalate</button>
+      <button id='queue-forward' class='queue-button btn btn-primary'>Forward</button>
+      <button id='queue-save' class='queue-button btn btn-primary'>Save</button>
+      <textarea rows="10" cols="50" id='queue-comment'></textarea>
+
+    </div>
+    <div id='customer-info-block'>
+      <h4>Customer:</h3>
+      <div id='customer-info'>
+      </div>
+    </div>
+    </div>
+    <div id='queue-table' class='scrollqueue'>
+
+
+
+      <table id='queue_table' class='queue'>
+      <thead>
+        <tr>
+          <th class='table-col'>Date in Queue</th>
+          <th class='table-col'>Created</th>
+          <th class='table-col'>Team</th>
+          <th class='table-col'>Action</th>
+          <th class='table-col'>Customer</th>
+          <th class='table-col'>Assigned</th>
+        </tr>
+      </thead>
+
+
+
+      <tbody id='queue-body' >
+
+      </tbody>
+
+    </table>
+    </div>
+    <div>
+      <div>
+        <h4>History:</h4>
+      </div>
+      <textarea rows="6" cols="50" id='queue-history' readonly> </textarea>
+    </div>
+</div>
+
+
+
+<br>
+
+<%= link_to 'New Work Item', new_work_item_path %>

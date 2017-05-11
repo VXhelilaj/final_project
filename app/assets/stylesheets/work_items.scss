@@ -1,0 +1,129 @@
+// Place all the styles related to the WorkItems controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+#customer-info {
+  border: solid black 1px;
+  height: 140px;
+
+}
+
+.scrollqueue{
+  height: 200px;
+  overflow: scroll;
+}
+
+#customer-info-block{
+  float:left;
+  margin-top: 0;
+  width: 20%;
+    //top: 20px;
+}
+
+.table-col{
+  padding: 5px;
+}
+
+#comments-customer{
+  width: 100%;
+  overflow: hidden;
+  margin-left: auto;
+  margin-right: auto;
+
+}
+
+#comments{
+  float:left;
+  width: 450px;
+  height:auto;
+
+}
+
+tr:hover{
+ cursor: pointer;
+ width: auto
+ //nth-child(even) background-color: #f2f2f2;
+}
+
+tr:nth-child(even){background-color: #f2f2f2}
+
+.queue {
+  height: 400;
+  border: solid black 1px;
+}
+
+#queue-table {
+  height: 800;
+}
+table{
+  width: auto;
+}
+// table{
+//     border: 1px solid black;
+//     table-layout: fixed;
+//     width: 200px;
+// }
+//
+// th, td {
+//
+//     overflow: hidden;
+//     width: 150px;
+// }
+#work-area{
+  position: relative;
+
+}
+
+h3{
+  text-align: center;
+}
+
+
+.autocomplete-suggestions { border: 1px solid #999; background: #fff; cursor: default; overflow: auto; }
+.autocomplete-suggestion { padding: 10px 5px; font-size: 1.2em; white-space: nowrap; overflow: hidden; }
+.autocomplete-selected { background: #f0f0f0; }
+.autocomplete-suggestions strong { font-weight: normal; color: #3399ff; }
+
+#searchfield { display: block; text-align: left;}
+// #searchfield { display: block; width: 100%; text-align: left; margin-bottom: 35px; }
+.search{
+  width:100%;
+  margin-bottom: 35px;
+}
+
+.customer-info-content {
+  padding-left: 5px;
+}
+.search2 {
+  width: 60%;
+  margin-top: 9px;
+  float: left;
+  margin-left: 180px;
+}
+
+#searchfield form {
+  display: inline-block;
+  background: #eeefed;
+  padding: 0;
+  margin: 0;
+  padding: 5px;
+  border-radius: 3px;
+  margin: 5px 0 0 0;
+}
+#searchfield form .biginput {
+  width: 550px;
+  height: 40px;
+  padding: 0 10px 0 10px;
+  background-color: #fff;
+  border: 1px solid #c8c8c8;
+  border-radius: 3px;
+  color: #aeaeae;
+  font-weight:normal;
+  font-size: 1.5em;
+  -webkit-transition: all 0.2s linear;
+  -moz-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+}
+#searchfield form .biginput:focus {
+  color: black;
+  // color: #858585;
+}

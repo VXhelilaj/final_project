@@ -1,0 +1,35 @@
+<%= form_for(team) do |f| %>
+  <% if team.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(team.errors.count, "error") %> prohibited this team from being saved:</h2>
+
+      <ul>
+      <% team.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :Team %>
+    <%= f.text_field :title %>
+  </div>
+
+  <%= f.fields_for :users do |uf| %>
+  <div class="dynamic" data-latest-user-id=0 data-remove-button-id=0>
+    <div>
+      <%= uf.label :name %>
+      <%= uf.label :email %>
+  <div class="user_specs">
+    <%= uf.text_field :name, {name: "peers[0][name]", id: "users_0_name"} %>
+   <%= uf.text_field :email, {name: "peers[0][email]", id: "users_0_email"}%>
+ </div>
+ </div>
+ <%= button_tag "+", id: "addToTeam" %>
+</div>
+<% end %>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
